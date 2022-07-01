@@ -1,7 +1,12 @@
+<h1>Oumaymita's potrfolio</h1>
+
+
+{% load static %}
+<img src="{% static 'portfolio/pic.png' %}">
+
 
 {% for project in projects %}
 
-<img src="{% static 'portfolio/pic.png' %}"
     <h2>{{ project.title }}</h2>
 
     <p>{{ project.description }}</p>
