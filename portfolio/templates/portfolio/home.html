@@ -12,11 +12,13 @@
     <p>{{ project.description }}</p>
 
     <img src="{{ project.image.url }}">
-
+    <br>
     {% if project.URL %}
     <a href="{{ project.URL }}">Link Here</a>
     {% endif %}
 
 
 {% endfor %}
+<br>
+<a href="{% url 'blog' %}">blog</a>
  
