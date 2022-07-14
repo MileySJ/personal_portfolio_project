@@ -6,6 +6,6 @@
     <br>
     <h4>{{ blog.date|date:'F jS o'}}</h4>
     <br>
-    <p>{{ blog.description }}</p>
+    <p>{{ blog.description|striptags|truncatechars:100 }}</p>
 
     {% endfor %}
