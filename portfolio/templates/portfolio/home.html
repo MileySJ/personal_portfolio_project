@@ -1,6 +1,7 @@
 <h1>Oumaymita's potrfolio</h1>
 
-
+<a href="{% url 'blog:blog' %}">blog</a>
+<br>
 {% load static %}
 <img src="{% static 'portfolio/pic.png' %}">
 
@@ -20,5 +21,4 @@
 
 {% endfor %}
 <br>
-<a href="{% url 'blog:blog' %}">blog</a>
  
