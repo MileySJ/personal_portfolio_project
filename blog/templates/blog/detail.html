@@ -1,4 +1,6 @@
+{% extends 'portfolio/base.html' %}
 
+{% block content %}
 
 <h1>{{ blog.title }}</h1>
 <br>
@@ -6,3 +8,4 @@
 <br>
 {{ blog.description|safe }}
 
+{% endblock %}
