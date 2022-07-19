@@ -6,21 +6,21 @@
 
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'portfolio/logo.png' %}" alt="" width="30" height="24" class="d-inline-block align-text-top">
+      <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'portfolio/pc.png' %}" alt="" width="30" height="24" class="d-inline-block align-text-top">
         Oumaymita</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
         <ul class="navbar-nav">
+           <li class="nav-item">
+            <a class="nav-link inactive" href="{% static 'portfolio/cv.pdf' %}" target="_blank">Resume</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="{% url 'blog:blog' %}">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="http://www.github.com/mileysj" target="_blank">Github</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="{% static 'portfolio/cv.pdf' %}" target="_blank">Resume</a>
+            <a class="nav-link active" href="http://www.github.com/mileysj" target="_blank"><img src="{% static 'portfolio/git.png' %}" height="35" width="35"></a>
           </li>
             </ul>
           </li>
